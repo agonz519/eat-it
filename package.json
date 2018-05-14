@@ -1,0 +1,26 @@
+{
+  "name": "eat-it",
+  "version": "1.0.0",
+  "description": "A \"burgers eaten\" logger with MySQL, Node, Express, Handlebars and a homemade ORM (yum!). Uses the MVC design pattern; use Node and MySQL to query and route data in your app, and Handlebars to generate HTML.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/agonz519/eat-it.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/agonz519/eat-it/issues"
+  },
+  "homepage": "https://github.com/agonz519/eat-it#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "express-handlebars": "^3.0.0",
+    "mysql": "^2.15.0"
+  }
+}
