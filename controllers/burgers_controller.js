@@ -1,7 +1,7 @@
 const express = require('express');
 // import the model (burger.js) to use its database functions.
-const burger = require('..models/burger.js');
 const router = express.Router();
+const burger = require('../models/burger.js');
 
 router.get('/', (request, result) => {
   burger.selectAll((data) => {

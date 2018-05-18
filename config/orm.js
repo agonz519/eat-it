@@ -1,5 +1,5 @@
 // Import the MySQL connection.
-const connection = require('../config/connection.js');
+const connection = require('./connection.js');
 
 // Object Relational Mapper (ORM)
 // The ?? signs are for swapping out table or column names

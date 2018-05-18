@@ -1,17 +1,20 @@
 // Set up the MySQL connection...
 const mysql = require('mysql');
-require('dotenv').config();
+// require('dotenv').config();
 
-const connection = mysql.createConnection({
-  host: process.env.DATABASE_HOST,
-  port: process.env.DATABASE_PORT,
-  user: process.env.DATABASE_USER,
-  password: process.env.DATABASE_PASSWORD,
-  database: process.env.DATABASE_DATABASE
+var connection = mysql.createConnection({
+  port: 3306,
+  host: 'localhost',
+  user: 'root',
+  password: 'p@ssw0rd',
+  database: 'burgers_db'
 });
 
+// console.log(connection);
+
 connection.connect((error) => {
-  if (error) throw 'Something went wrong: ' + error;
+  // if (error) throw 'Something went wrong: ' + error;
+  if (error) return console.error(error.stack);
   console.log('Welcome to the burgers_db database. You are connected as ID ' + connection.threadId);
 });
 
