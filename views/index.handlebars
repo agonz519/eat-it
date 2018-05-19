@@ -1,15 +1,18 @@
-<h1>BURGERS! EAT IT!</h1>
+<h1>EAT LE BURGER</h1>
 
-<h2>BURGERS THAT I NEED TO PUT IN MY MOUTH</h2>
+<h2>"Please, eat le burger mon amie!"</h2>
 
 <ul>
   {{#each burgers}}
     {{#unless devoured}}
       <li>
         {{burger_name}}
-
-        <button class="devourBurger" data-id="{{id}}" data-devoured="{{devoured}}">
-          {{#if devoured}}Regurgitate!{{else}}EAT{{/if}}
+        <br>
+        <button class="devourBurger btn btn-primary btn-sm border border-dark" data-id="{{id}}" data-devoured="{{devoured}}">
+          {{#if devoured}}Regurgitate!!{{else}}Eat It{{/if}}
+        </button>
+        <button class="deleteBurger btn btn-danger btn-sm border border-dark" data-id="{{id}}">
+          X
         </button>
       </li>
 
@@ -17,16 +20,19 @@
   {{/each}}
 </ul>
 
-<h2>BURGERS THAT I'VE ATE</h2>
+<h2>"Oh non monsieur/madam! Are you alright?!"</h2>
 
 <ul>
   {{#each burgers}}
     {{#if devoured}}
       <li>
         {{burger_name}}
-
-        <button class="devourBurger" data-id="{{id}}" data-devoured="{{devoured}}">
-          {{#if devoured}}Regurgitate!{{else}}EAT{{/if}}
+        <br>
+        <button class="devourBurger btn btn-primary btn-sm border border-dark" data-id="{{id}}" data-devoured="{{devoured}}">
+          {{#if devoured}}Regurgitate!!{{else}}Eat It{{/if}}
+        </button>
+        <button class="deleteBurger btn btn-danger btn-sm border border-dark" data-id="{{id}}">
+          X
         </button>
       </li>
     {{/if}}
@@ -40,6 +46,6 @@
     <input type="text" id="bName" name="name">
   </div>
 
-  <button type="submit">Add Burger</button>
+  <button type="submit" class="btn btn-success btn-lg border border-dark">Add Burger</button><br><br>
 
 </form>

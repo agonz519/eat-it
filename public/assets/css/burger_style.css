@@ -1,0 +1,28 @@
+h1 {
+  font-family: 'Skranji', cursive;
+  font-size: 80px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+h2 {
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-size: 27px;
+}
+
+body {
+  background-image: url('../img/burger_dude.png');
+  background-repeat: no-repeat;
+  background-position: right;
+  background-attachment: fixed;
+}
+
+li {
+  margin: 5px;
+  font-weight: bold;
+}
+
+label {
+  font-weight: bold;
+}
